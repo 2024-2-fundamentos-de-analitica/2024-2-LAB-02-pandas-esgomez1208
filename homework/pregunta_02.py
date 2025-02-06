@@ -14,3 +14,11 @@ def pregunta_02():
     4
 
     """
+    import pandas as pd
+    tb0 = 'files/input/tbl0.tsv'
+    df = pd.read_csv(tb0, sep='\t')
+
+    # Shape: (#filas, #columnas)
+    columnas = df.shape[1]
+    
+    return columnas
